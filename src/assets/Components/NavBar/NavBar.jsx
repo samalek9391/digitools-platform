@@ -4,7 +4,7 @@ import { FaShoppingCart } from "react-icons/fa";
 
 const NavBar = () => {
   return (
-    <div>
+    <div className="w-[80%] mx-auto mb-15">
       <div className="navbar bg-base-100 shadow-sm">
         <div className="navbar-start">
           <div className="dropdown">
