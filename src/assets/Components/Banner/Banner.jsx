@@ -3,7 +3,7 @@ import bannerImg from "../../../assets/banner.png"
 
 const Banner = () => {
   return (
-    <div className="flex justify-between items-center w-[80%] mx-auto space-x-4">
+    <div className="flex justify-between items-center w-[80%] mx-auto mb-21">
       {/* Content */}
       <div className="my-auto">
         {/* Sub Heading Above */}
@@ -31,12 +31,12 @@ const Banner = () => {
         {/* buttons */}
         <div className="flex gap-4">
           {/* Explore Products Button */}
-          <button className="px-6 py-2 rounded-full text-white font-medium bg-gradient-to-r from-[#4F39F6] to-[#9514FA]">
+          <button className="px-6 py-2 rounded-full text-white font-medium bg-linear-to-r from-[#4F39F6] to-[#9514FA]">
             Explore Products
           </button>
 
           {/* Watch Demo Button */}
-          <div className="p-[2px] rounded-full bg-gradient-to-r from-[#4F39F6] to-[#9514FA]">
+          <div className="p-0.5 rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA]">
             <button className="px-6 py-2 rounded-full bg-white text-[#4F39F6] font-medium flex items-center gap-2">
               {/* Play Icon */}
               <span>▶</span>
