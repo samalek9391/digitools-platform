@@ -1,4 +1,6 @@
 import React from "react";
+import { FaShoppingCart } from "react-icons/fa";
+
 
 const NavBar = () => {
   return (
@@ -45,7 +47,7 @@ const NavBar = () => {
               
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent font-bold">DigiTools</a>
+          <a className="btn btn-ghost bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent font-bold text-2xl">DigiTools</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
@@ -70,8 +72,11 @@ const NavBar = () => {
             </li>
           </ul>
         </div>
+
         <div className="navbar-end">
-          <a className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-[#ffffff] rounded-full">Button</a>
+          <a href="#" className=""><FaShoppingCart/></a>
+          <a className="px-4" href=""> Login</a>
+          <a className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-[#ffffff] rounded-full px-5">Get Started</a>
         </div>
       </div>
     </div>
