@@ -1,7 +1,7 @@
 import React, { use } from 'react';
 import Card from './Card';
 
-const CardsContainer = ({dataPromise}) => {
+const ProductContainer = ({dataPromise}) => {
     const tools = use(dataPromise)
     console.log(tools);
     return (
@@ -12,4 +12,4 @@ const CardsContainer = ({dataPromise}) => {
     );
 };
 
-export default CardsContainer;
+export default ProductContainer;

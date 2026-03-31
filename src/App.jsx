@@ -1,11 +1,12 @@
 
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
 import './App.css'
 import Banner from './assets/Components/Banner/Banner'
-import CardsContainer from './assets/Components/Main/CardsContainer'
 import Rating from './assets/Components/Main/Rating'
-import ToolsDescription from './assets/Components/Main/ToolsDescription'
 import NavBar from './assets/Components/NavBar/NavBar'
+import ToogleTab from './assets/Components/Main/ToogleTab'
+import ProductContainer from './assets/Components/Main/ProductContainer'
+import CartContainer from './assets/Components/Main/CartContainer'
 
 
 const getData = async () => {
@@ -17,16 +18,21 @@ const getData = async () => {
 function App() {
 
   const dataPromise = getData()
+  
+  const [activeTab, setActiveTab] = useState("Product")
+  
   return (
     <>
       
         <NavBar/>
         <Banner/>
         <Rating/>
-        <ToolsDescription/>
+        <ToogleTab activeTab = {activeTab} setActiveTab ={setActiveTab}/>
         <Suspense fallback ={<span className="loading loading-spinner loading-xl"></span>}>
-            <CardsContainer dataPromise={dataPromise}/>
+            {activeTab === "Product" && <ProductContainer dataPromise={dataPromise}/>}
+            {activeTab === "Cart" && <CartContainer/>}
         </Suspense>
+        
         
           
     </>

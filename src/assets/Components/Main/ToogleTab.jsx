@@ -1,22 +1,24 @@
 import React from "react";
 
-const ToolsDescription = () => {
+const ToogleTab = ({activeTab, setActiveTab}) => {
   return (
     <div className="w-[80%] mx-auto mb-10">
       {/* name of each tab group should be unique */}
-      <div className="tabs tabs-box items-center justify-center gap-4">
+      <div className="tabs tabs-box items-center justify-center gap-4 bg-transparent">
         <input
           type="radio"
           name="my_tabs_1"
-          className="tab bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white px-4 py-2 rounded-full"
+          className="tab px-4 py-2 w-40 rounded-full"
           aria-label="Products"
+          onClick={() => setActiveTab("Product")}
           defaultChecked
         />
         <input
           type="radio"
           name="my_tabs_1"
-          className="tab bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white px-4 py-2 rounded-full"
+          className="tab px-4 py-2 w-40 rounded-full"
           aria-label="Cart"
+          onClick={()=> setActiveTab("Cart")}
           
         />
 
@@ -25,4 +27,4 @@ const ToolsDescription = () => {
   );
 };
 
-export default ToolsDescription;
+export default ToogleTab;
