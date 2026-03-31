@@ -1,7 +1,13 @@
-import React from "react";
-import { FaCheck } from "react-icons/fa";
+import React, { useState } from "react";
+
 
 const Card = ({ tool }) => {
+
+const [isBuyNow, setIsBuyNow] = useState(false);
+const handleBuyNowBtn = () => {
+    setIsBuyNow(true)
+}
+
 
   return (
     <div className="border-2 border-[#F2F2F2]  rounded-2xl p-6">
@@ -34,7 +40,7 @@ const Card = ({ tool }) => {
 
         </div>
 
-        <button className="btn w-full px-6 py-2 rounded-full text-white font-medium bg-linear-to-r from-[#4F39F6] to-[#9514FA]">Buy Now</button>
+        <button onClick={handleBuyNowBtn} className="btn w-full px-6 py-2 rounded-full text-white font-medium bg-linear-to-r from-[#4F39F6] to-[#9514FA]">{isBuyNow ? "Added to Cart" : "Buy Now"}</button>
 
 
     </div>
