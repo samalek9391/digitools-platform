@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "name": "Starter Resume Kit",
+    "description": "Create professional resumes quickly with ready-made templates.",
+    "price": 9.99,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "New",
+    "features": ["50+ templates", "ATS optimization", "Export to PDF"],
+    "icon": "📄"
+  },
+  {
+    "id": 2,
+    "name": "Pro Resume Builder",
+    "description": "Advanced resume builder with AI suggestions and customization.",
+    "price": 19.99,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "Popular",
+    "features": ["200+ templates", "AI suggestions", "Cover letter builder"],
+    "icon": "🧠"
+  },
+  {
+    "id": 3,
+    "name": "Portfolio Website Kit",
+    "description": "Build your personal portfolio website without coding.",
+    "price": 29.99,
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "Best Seller",
+    "features": ["Drag & drop builder", "Custom domains", "SEO optimization"],
+    "icon": "🌐"
+  },
+  {
+    "id": 4,
+    "name": "Social Media Toolkit",
+    "description": "Everything you need to manage and grow your social media.",
+    "price": 14.99,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "Popular",
+    "features": ["Post scheduler", "Analytics dashboard", "Content calendar"],
+    "icon": "📱"
+  },
+  {
+    "id": 5,
+    "name": "Freelancer Starter Pack",
+    "description": "Essential tools and templates for new freelancers.",
+    "price": 24.99,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "New",
+    "features": ["Proposal templates", "Invoice generator", "Client tracker"],
+    "icon": "💼"
+  },
+  {
+    "id": 6,
+    "name": "Email Marketing Pro",
+    "description": "Automate and optimize your email campaigns.",
+    "price": 12.99,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best seller",
+    "features": ["Email templates", "Automation workflows", "A/B testing"],
+    "icon": "📧"
+  },
+  {
+    "id": 7,
+    "name": "SEO Optimization Tool",
+    "description": "Boost your website ranking with advanced SEO tools.",
+    "price": 39.99,
+    "period": "yearly",
+    "tag": "Popular",
+    "tagType": "Popular",
+    "features": ["Keyword research", "Site audit", "Backlink analysis"],
+    "icon": "🔍"
+  },
+  {
+    "id": 8,
+    "name": "Canva Design Bundle",
+    "description": "High-quality Canva templates for social media and ads.",
+    "price": 17.99,
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "Best Seller",
+    "features": ["500+ templates", "Editable designs", "Brand kits"],
+    "icon": "🎨"
+  },
+  {
+    "id": 9,
+    "name": "AI Content Generator",
+    "description": "Generate blog posts, ads, and captions using AI.",
+    "price": 22.99,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "New",
+    "features": ["AI writing assistant", "Multiple tones", "SEO-friendly content"],
+    "icon": "🤖"
+  }
+]
