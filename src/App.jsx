@@ -8,6 +8,8 @@ import ToogleTab from './assets/Components/Main/ToogleTab'
 import ProductContainer from './assets/Components/Main/ProductContainer'
 import CartContainer from './assets/Components/Main/CartContainer'
 import ToolsDes from './assets/Components/Main/ToolsDes'
+import ThreeSteps from './assets/Components/Main/ThreeSteps'
+import Footer from './assets/Components/Banner/Footer/Footer'
 
 
 const getData = async () => {
@@ -38,6 +40,8 @@ function App() {
             {activeTab === "Product" && <ProductContainer dataPromise={dataPromise} carts = {carts} setCarts = {setCarts}/>}
             {activeTab === "Cart" && <CartContainer carts = {carts} setCarts = {setCarts}/>}
         </Suspense>
+        <ThreeSteps/>
+        <Footer/>
         
         
           
