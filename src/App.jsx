@@ -36,7 +36,7 @@ function App() {
         <ToogleTab activeTab = {activeTab} setActiveTab ={setActiveTab}/>
         <Suspense fallback ={<span className="loading loading-spinner loading-xl"></span>}>
             {activeTab === "Product" && <ProductContainer dataPromise={dataPromise} carts = {carts} setCarts = {setCarts}/>}
-            {activeTab === "Cart" && <CartContainer carts = {carts}/>}
+            {activeTab === "Cart" && <CartContainer carts = {carts} setCarts = {setCarts}/>}
         </Suspense>
         
         

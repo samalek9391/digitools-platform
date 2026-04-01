@@ -1,11 +1,18 @@
 import React from "react";
 
-const CartContainer = ({ carts }) => {
-  return (
-    <div className="mb-20 w-[80%] mx-auto border-2 p-10">
+const CartContainer = ({ carts, setCarts }) => {
+ 
+ const totalPrice = carts.reduce((sum, item) => sum + item.price, 0)
+
+ const handlePayment = () => {
+    setCarts([])
+ }
+ 
+    return (
+    <div className="mb-20 w-[80%] mx-auto border-2 p-10 border-[#F2F2F2] rounded-2xl">
         <div className="">
             
-            <h2 className="text-[#101727] text-2xl font-bold pb-6">Your Cart</h2>
+            <h2 className="text-[#101727] text-2xl font-bold pb-6">Your Cart ({carts.length})</h2>
 
 
             {
@@ -28,8 +35,12 @@ const CartContainer = ({ carts }) => {
                 )
             }
 
+            <div className="flex justify-between items-center mb-6">
+                <h6 className="text-[#627382]">Total</h6>
+                <h3 className="text-[#101727] text-2xl font-bold">{totalPrice}</h3>
+            </div>
             
-
+            <button onClick={handlePayment} className="btn primary w-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-4xl text-white py-4 font-bold">Proceed To Checkout</button>
             
         </div>
     </div>
