@@ -1,16 +1,86 @@
-# React + Vite
+🚀 DigiTools – Digital Tools Marketplace
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+DigiTools is a modern, responsive web application designed to help users discover and purchase premium digital tools to enhance productivity and workflow efficiency.
 
-Currently, two official plugins are available:
+🌟 Features
+🔥 Beautiful Hero Section with CTA (Call-to-Action)
+📊 Statistics Section (Active Users, Tools, Ratings)
+🧰 Premium Tools Showcase
+💳 Pricing Plans (Starter, Pro, Enterprise)
+🪜 Simple 3-Step Getting Started Guide
+📱 Fully Responsive Design
+🎨 Modern UI with Gradient Styling
+🖼️ Preview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+A clean and minimal digital tools marketplace UI with gradient branding and card-based layout.
 
-## React Compiler
+🛠️ Technologies Used
+⚛️ React.js
+🎨 Tailwind CSS
+🌼 DaisyUI
+🌐 HTML5 & CSS3
+⚡ JavaScript (ES6+)
+📂 Project Structure
+DigiTools/
+│── public/
+│   └── data.json
+│
+│── src/
+│   ├── assets/
+│   │   ├── Components/
+│   │   │   ├── Banner/
+│   │   │   ├── Main/
+│   │   │   ├── NavBar/
+│   │   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   ├── index.css
+│
+│── package.json
+│── README.md
+🚀 Getting Started
+1️⃣ Clone the repository
+git clone https://github.com/your-username/digitools.git
+2️⃣ Navigate to the project
+cd digitools
+3️⃣ Install dependencies
+npm install
+4️⃣ Run the development server
+npm run dev
+💡 Sections Overview
+🔹 Hero Section
+Engaging headline
+Call-to-action buttons (Explore Products, Watch Demo)
+🔹 Stats Section
+50K+ Active Users
+200+ Premium Tools
+4.9 Rating
+🔹 Tools Section
+Product cards with:
+Name
+Price
+Features
+Buy Now button
+🔹 How It Works
+Create Account
+Choose Products
+Start Creating
+🔹 Pricing
+Starter ($0/month)
+Pro ($29/month)
+Enterprise ($99/month)
+🎯 Future Improvements
+🔐 Authentication system
+🛒 Cart & Checkout functionality
+🌍 Backend integration (Node.js / Firebase)
+📊 Dashboard for users
+⭐ Reviews & ratings system
+🙌 Author
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Sheikh Abdul Malek
 
-## Expanding the ESLint configuration
+Digital Marketer & Aspiring Full-Stack Developer
+Founder of Marcode Digital
+📄 License
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This project is open-source and available under the MIT License.

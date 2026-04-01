@@ -7,7 +7,7 @@ const ThreeSteps = () => {
             <p className='text-[#627382] text-center mb-10'>Start using premium digital tools in minutes, not hours.</p>
 
 
-            <div className='grid grid-cols-3 gap-8'>
+            <div className='grid sm:grid-cols-1 md:grid-cols-3 gap-8'>
                 <div className='bg-[#F9FAFC] border-[#F2F2F2] shadow p-6 rounded-2xl'>
                     <h4 className='mb-2 text-[#101727] font-bold text-2xl'>Starter</h4>
                     <p className='text-[#627382] mb-6'>Perfect for getting started</p>
