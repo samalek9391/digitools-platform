@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 
 
-const Card = ({ tool }) => {
+const Card = ({ tool, carts, setCarts }) => {
 
 const [isBuyNow, setIsBuyNow] = useState(false);
+
 const handleBuyNowBtn = () => {
     setIsBuyNow(true)
+    setCarts( [...carts, tool])
 }
 
 

@@ -7,6 +7,7 @@ import NavBar from './assets/Components/NavBar/NavBar'
 import ToogleTab from './assets/Components/Main/ToogleTab'
 import ProductContainer from './assets/Components/Main/ProductContainer'
 import CartContainer from './assets/Components/Main/CartContainer'
+import ToolsDes from './assets/Components/Main/ToolsDes'
 
 
 const getData = async () => {
@@ -20,6 +21,10 @@ function App() {
   const dataPromise = getData()
   
   const [activeTab, setActiveTab] = useState("Product")
+
+  const [carts, setCarts] = useState([])
+
+  
   
   return (
     <>
@@ -27,10 +32,11 @@ function App() {
         <NavBar/>
         <Banner/>
         <Rating/>
+        <ToolsDes/>
         <ToogleTab activeTab = {activeTab} setActiveTab ={setActiveTab}/>
         <Suspense fallback ={<span className="loading loading-spinner loading-xl"></span>}>
-            {activeTab === "Product" && <ProductContainer dataPromise={dataPromise}/>}
-            {activeTab === "Cart" && <CartContainer/>}
+            {activeTab === "Product" && <ProductContainer dataPromise={dataPromise} carts = {carts} setCarts = {setCarts}/>}
+            {activeTab === "Cart" && <CartContainer carts = {carts}/>}
         </Suspense>
         
         
